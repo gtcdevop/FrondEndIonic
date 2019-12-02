@@ -1,18 +1,106 @@
+<!--
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-navbar>
 </ion-header>
+-->
+<ion-content>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+</ion-content>
 
+<ion-content>
+
+  <div class="background-rounded-top">
+    <ion-icon class="arrow-back" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    <div class="text-center">
+      <span class="name-profile">Meu Nome Aqui</span>
+    </div>
+
+  </div>
+  <div>
+    <ion-icon class="person-profile" ios="ios-person" md="md-person"></ion-icon>
+  </div>
+
+  <ion-grid>
+
+    <!-- Person -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="ios-person" md="md-person"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">Anna Avetisyan</ion-col>
+      </ion-item>
+    </ion-row>
+
+    <!-- Calendar -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="ios-calendar" md="md-calendar"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">Birthday</ion-col>
+      </ion-item>
+    </ion-row>
+
+    <!-- Phone -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="ios-phone-portrait" md="md-phone-portrait"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">(19) 1234-9315</ion-col>
+      </ion-item>
+    </ion-row>
+
+    <!-- Instagram -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">Instagram</ion-col>
+      </ion-item>
+    </ion-row>
+
+    <!-- Email -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">email@email.com.br</ion-col>
+      </ion-item>
+    </ion-row>
+
+    <!-- Password -->
+    <ion-row>
+      <ion-item>
+        <ion-col col-2>
+          <ion-icon ios="ios-eye" md="md-eye"></ion-icon>
+        </ion-col>
+        <ion-col col-10 class="text-muted">Password</ion-col>
+        <ion-col col-2>
+          <ion-icon class="float-right" ios="ios-repeat" md="md-repeat"></ion-icon>
+        </ion-col>
+      </ion-item>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button>Edit profile</button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <!--
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+    https://dribbble.com/shots/6341348-Mobile-App-User-Profile-Page
   </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+-->
 </ion-content>

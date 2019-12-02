@@ -1,16 +1,39 @@
 // http://ionicframework.com/docs/theming/
 
+:root {
+  --linear-gradient: linear-gradient(90deg, rgba(128, 0, 210, 0.8239495627352503) 40%, rgba(209, 0, 241, 0.8659663694579394) 70%);
+  --shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.text-center {
+  text-align: center !important;
+}
+
+.float-right {
+  position: relative;
+  float: right;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+button {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  width: 100% !important;
+  letter-spacing: 1px;
+  line-height: 1rem;
+  border-radius: 40px !important;
+  border: 2px solid var(--linear-gradient);
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  font-weight: bold !important;
+  background: var(--linear-gradient);
+}
+
+ion-icon {
+  font-size: 3rem;
+  color: #9100ff;
+  vertical-align: middle;
+}
