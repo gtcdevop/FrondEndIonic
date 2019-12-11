@@ -1,0 +1,16 @@
+/* -- Custom SVG icons -- */
+ion-icon {
+  &[class*="custom-"] {
+    mask-size: contain;
+    mask-position: 10% 10%;
+    mask-repeat: no-repeat;
+    background: transparent;
+    --ion-color-base: transparent !important;
+    width: 1em;
+    height: 1em;
+  }
+
+  &[class*="custom-teste"] {
+    mask-image: url(../assets/svgs/teste.svg);
+  }
+}

@@ -1,23 +1,73 @@
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon class="arrow-back" ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+      <ion-col class="text-white">Dashboard</ion-col>
     </button>
-    <ion-title>List</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+
+
+  <ion-grid>
+
+    <!-- Item 0 -->
+    <ion-row>
+      <ion-col>
+        <ion-icon name="custom-teste"></ion-icon>
+      </ion-col>
+      <ion-col class="text-muted">
+        <p>total no of rides</p>
+        <p class="number">380</p>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- Item 1 -->
+    <ion-row>
+      <ion-col>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </ion-col>
+      <ion-col class="text-muted">
+        <p>Revenue</p>
+        <p class="number">$2000</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- Item 2 -->
+    <ion-row>
+      <ion-col>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </ion-col>
+      <ion-col class="text-muted">
+        <p>No of scheduled rides</p>
+        <p class="number">12</p>
+      </ion-col>
+    </ion-row>
+
+    <!-- Item 3 -->
+    <ion-row>
+      <ion-col>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </ion-col>
+      <ion-col class="text-muted">
+        <p>cancelled rides</p>
+        <p class="number">48</p>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- Item 4 -->
+    <ion-row>
+      <ion-col>
+        <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      </ion-col>
+      <ion-col class="text-muted">
+        <p>fuel</p>
+        <p class="number">70%</p>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
