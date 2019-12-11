@@ -21,15 +21,42 @@ page-list {
   }
 
   ion-row {
-    //border-bottom: solid 1px grey;
     box-shadow: 2px 2px 2px 0.1rem #cecece;
     width: 99%;
     border-radius: 0.5rem;
     margin: 1rem auto;
   }
 
-  ion-icon {
-    font-size: 7rem;
+  ion-col {
+    padding: 0 !important;
+  }
+
+  img {
+    max-width: 7rem;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .azul {
+    background: #3fb1e5;
+    background-image: url(../../assets/svgs/icone0.svg);
+  }
+
+  .marinho {
+    background: #3e4095;
+  }
+
+  .cinza {
+    background: #bdbfc1;
+  }
+
+  .vermelho {
+    background: #ed3237;
+  }
+
+  .verde {
+    background: #80cc29;
   }
 
   .text-muted {
@@ -37,11 +64,22 @@ page-list {
     text-transform: uppercase;
     font-size: 1.2rem;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .text-muted .number {
     font-size: 4.5rem !important;
     font-weight: bold;
+  }
+
+  .teste {
+    font-size: 5rem;
+    display: block;
+    fill: currentColor;
+    stroke: currentColor;
+    height: 100%;
+    width: 100%;
   }
 
 }
